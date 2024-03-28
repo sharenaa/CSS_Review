@@ -192,12 +192,12 @@ gap: 8px;
   width: 300px;
   height: 100px;
   background-color: 2px yellow solid;
-  transform: translate(10px, 10px); /* Move the element by 10px in both X and Y directions */
+  transform: translate(10px, 10px);
 }
 
   #rotate{
      transform: rotate(20deg);
-  } /* Rotate the element by 20 degrees */
+  }
 
 .scale{
   width: 300px;
@@ -205,7 +205,7 @@ gap: 8px;
   background-color: 2px yellow solid;
   margin: 50px;
   transform: scale(2, 2);
-}  /* Scale the element to twice its size */
+}
 .scaleX{
   width: 300px;
   height: 100px;
@@ -213,7 +213,7 @@ gap: 8px;
   border: 2px solid #3aa2fd;
   margin: 150px;
   transform: scaleX(2);
-} /* Scale the element only along the X-axis to twice its width */
+}
 .scaleY{
   width: 300px;
   height: 100px;
@@ -286,7 +286,7 @@ gap: 8px;
   border:1px solid black;
    transition: width 2s, height 1s, background-color 2s, transform 2s; 
 }
-
+    /*animation timing functions*/
 /*transitions*/
 .#transition:hover{
   width:200px;
@@ -303,6 +303,7 @@ gap: 8px;
     background-color: lavenderblush;
   }
 /*Ease*/
+  
 #ease{
   transition-timing-function:ease;
   transition: width 2s, height 1s, background-color 2s, transform 2s;
