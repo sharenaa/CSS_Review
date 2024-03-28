@@ -2,31 +2,31 @@
 <html>
 <!-- metadata-->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>CSS_Review</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS_Review</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-	<!-- body has the content-->
+  <!-- body has the content-->
 <body>
 
-	<h1 id="mainH">CSS</h1>
+  <h1 id="mainH">CSS</h1>
   <h1 id="logo">
-       Review Page
+       Animations Page
   </h1>
 
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="Animation.html">Animations</a>
-		<a href="Layout.html">Layouts</a>
-		<a href=".html"></a>
-	</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Animation.html">Animations</a>
+    <a href="Layout.html">Layouts</a>
+    <a href="other.html"></a>
+  </nav>
 <div id="twoD">  
-	<h1>The translate() Method</h1>
+  <h1>The translate() Method</h1>
 <p>The translate() method moves an element from its current position:</p>
 
-<div>
+<div class="translate">
 This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
 </div>
 <hr>
@@ -34,7 +34,7 @@ This div element is moved 50 pixels to the right, and 100 pixels down from its c
 
 <p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
 
-<div>
+<div class="rotate">
 This a normal div element.
 </div>
 
@@ -47,7 +47,7 @@ This div element is rotated clockwise 20 degrees.
 
 <p>The scale() method increases or decreases the size of an element.</p>
 
-<div>
+<div class="scale">
 This div element is two times of its original width, and three times of its original height.
 </div>
 
@@ -56,7 +56,7 @@ This div element is two times of its original width, and three times of its orig
 
 <p>The scaleX() method increases or decreases the width of an element.</p>
 
-<div>
+<div class="scaleX">
 This div element is two times of its original width.
 </div>
 <hr>
@@ -64,22 +64,21 @@ This div element is two times of its original width.
 
 <p>The scaleY() method increases or decreases the height of an element.</p>
 
-<div>
+<div class="scaleY">
 This div element is three times of its original height.
 </div>
 
   <hr>
 <h1>The skewX() Method</h1>
-
-<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+  <p class="skew">The skew() method skews an element along the X-axis by the given angle.</p>
+<p class="skewX">The skewX() method skews an element along the X-axis by the given angle.</p>
+  <p class="skewY">The skewY() method skews an element along the X-axis by the given angle.</p>
 
 <div>
 This a normal div element.
 </div>
 
-<div id="myDiv">
-This div element is skewed 20 degrees along the X-axis.
-</div>
+
 
   <hr>
 <h1>The matrix() Method</h1>
@@ -90,15 +89,15 @@ This div element is skewed 20 degrees along the X-axis.
 This a normal div element.
 </div>
 
-<div id="myDiv1">
+<div id="matrix" class="bg">
 Using the matrix() method.
 </div>
 
-<div id="myDiv2">
+<div id="matrix2D" class="bg">
 Another use of the matrix() method.
 </div>
 </div>
-  
+
   <div id="threeD">
     <h1>The rotateX() Method</h1>
 
@@ -108,7 +107,8 @@ Another use of the matrix() method.
 This a normal div element.
 </div>
 
-<div id="myDiv">
+
+<div id="rotate3DX" >
 This div element is rotated 150 degrees.
 </div>
     <hr>
@@ -116,11 +116,11 @@ This div element is rotated 150 degrees.
 
 <p>The rotateY() method rotates an element around its Y-axis at a given degree.</p>
 
-<div>
+<div class="bg">
 This a normal div element.
 </div>
 
-<div id="myDiv">
+<div id="rotate3DY" class="bg">
 This div element is rotated 150 degrees.
 </div>
     <hr>
@@ -128,11 +128,11 @@ This div element is rotated 150 degrees.
 
 <p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
 
-<div>
+<div class="bg">
 This a normal div element.
 </div>
 
-<div id="myDiv">
+<div id="rotate3DY" class="bg">
 This div element is rotated 90 degrees.
 </div>
   </div>
@@ -141,8 +141,26 @@ This div element is rotated 90 degrees.
     <h1>The transition Property</h1>
 
 <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="perry" id="transition"></div>
+    <hr>
+    <h1>The transition linear</h1>
+    <div class="perry" id="linear"></div>
+    <hr>
+    <h1>The transition ease</h1>
+    <div class="perry" id="ease"></div>
+  
+  <hr>
+  <h1>The transition Ease-In</h1>
+    <div class="perry" id="easeIn"></div>
+    <hr>
+    <h1>The transition Ease-Out</h1>
+      <div class="perry" id="easeOut"></div>
+    <hr>
+    <h1>The transition Ease-In-Out</h1>
+      <div class="perry" id="easeInOut"></div>
+  
 <div></div>
-    
+
   </div>
 
   <div id="animations">
@@ -199,6 +217,6 @@ This div element is rotated 90 degrees.
 
 <div></div>
   </div>
-	</body>
+  </body>
 
 </html>
